@@ -1,5 +1,17 @@
 {
     "cSpell.words": [
-        "Fintrend_222_styles"
-    ]
+        "Effra",
+        "Elon",
+        "elonmusk",
+        "Fintrend_222_styles",
+        "Pintrest"
+    ],
+    "cSpell.customDictionaries": {
+        "custom-dictionary-workspace": {
+            "name": "custom-dictionary-workspace",
+            "path": "${workspaceFolder:findtrend222}/.cspell/custom-dictionary-workspace.txt",
+            "addWords": true,
+            "scope": "workspace"
+        }
+    }
 }

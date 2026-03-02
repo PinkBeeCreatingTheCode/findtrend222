@@ -439,8 +439,8 @@ nav {
     flex-direction:column;
     justify-content: flex-start;
     align-items: center;
-    height:732px;
-    margin-bottom:129px;
+    height:auto; /* 732px  */
+    margin-bottom:120px;
     width:100%;
 }
 
@@ -455,8 +455,8 @@ nav {
     padding-left:80px;
     padding-right:80px;
     margin:120px auto 80px;
-    
 }
+
 
 .logos-container-title h2 {
     width:100%;
@@ -521,23 +521,86 @@ nav {
     position:relative;
 }
 
-.platforms-container{
+.platforms-section {
     display:flex;
     flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    height: 124px;
-    margin-bottom:80px;
-
-}
-
-.platforms-container img{
     width:100%;
     max-width:1160px;
-    height:auto; 
-     
-    display:block;   
+    height:auto;
+    margin:0 auto;
+    position:relative;
+    top:0;
+
 }
+
+.platforms-section-title {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:76px;
+}
+
+.platforms-section-title h2 {
+    font-family: "Effra",sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    color:black;
+   /* text-align:center;
+    margin:0 auto;
+*/
+
+}
+
+.platforms-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 124px;
+    width:100%;
+    margin-bottom:80px;
+    margin-top:80px;
+
+}
+
+.platform-item {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 124px;
+    height:124px;
+}
+
+
+
+/*.item-frame {
+    margin:32px 32px 32px 32px;
+
+}*/
+
+.platform-item a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+   
+
+
+}
+
+.platform-item a img{
+   
+    width:60px;
+    height:60px;   
+}
+
+.facebook {
+    background: url("https://i.ibb.co/DgP5YcYF/Group-33.png") no-repeat center center;
+    background-size: cover;
+    width:120px;
+    height:120px;
+   
+}
+
 
 .tweet-container{
     display:flex;
@@ -602,17 +665,33 @@ nav {
     align-items: center;
     margin:40px auto;
     width:100%;
-    max-width:25%;
+    max-width:30%;
     height:48px;
     position:relative;
     top:100px;
     color:white;
 }
 
-monthly-yearly-toggle-container h3{
-    font-size:32px;
+.monthly-yearly-toggle-container a{
+    display:block;
+    text-decoration: none;
+    font-size:24px;
     font-family:"Roboto", sans-serif;
+    
+   
   
+}
+
+.monthly {
+    color:#A8FF35;
+    background:black;
+    
+   
+}
+
+.yearly {
+    background:black;
+    color:white;
 }
 
 monthly-yearly-toggle-container img{
@@ -857,7 +936,6 @@ text-decoration: none;
 
 footer{
     display:flex;
-    flex-direction: column;
     align-items:center;
     background-color:white;
     background-size:cover;
@@ -866,15 +944,23 @@ footer{
     height:80px;
 }
 
-.footer-content-container {
+.footer-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
     width:100%;
     max-width:1440px;
+    height:80px;
+    margin:0 auto;
+}
+
+.footer-content-container {
+    width:100%;
+    max-width:1280px;
     height:80px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding-left:80px;
-    padding-right:80px;
     margin:0 auto;
     position:relative;
     top:0;
@@ -907,31 +993,36 @@ footer{
 
 }
 
-.footer-extra{
-    width:100%;
-    max-width:544px;
-    height:18px;
+.footer-extra-container{
     display:flex;
-    flex-direction:column;
-    justify-content:flex-start;
+    justify-content:flex-end;
     align-items:center;
+    width:50%;
 }
 
-.footer-extra ul{
+.footer-extra{
     display:flex;
     justify-content:space-between;
     align-items: center;
     width:100%;
+    max-width:544px;
     list-style:none;
 }
 
-.footer-extra ul li{
+.footer-extra  li{
     display:flex;
     justify-content: center;
     align-items:center;
     color:black;
+    
 }
 
-.footer-extra ul li a{
+.footer-extra li a{
     text-decoration:none;
+    color:black;
 }
+
+@media only screen and (min-width: 900px) {
+
+}
+
